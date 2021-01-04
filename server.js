@@ -7,7 +7,7 @@ var port = process.env.PORT || 8080;
 
 app.set('view engine', 'ejs');
 
-app.use(express.static(path.join(__dirname, 'app/assets')));
+app.use(express.static(__dirname + '/public'));
 
 // set the home page route
 app.get('/', function(req, res) {
