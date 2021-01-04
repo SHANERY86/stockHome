@@ -1,6 +1,6 @@
 # stockHome
 
-This project is called ‘stockHome’. I have made a simple weighing scales using a 5kg load cell and with this project I propose a prototype IoT stock tracing system for home or business.
+This project is called ‘stockHome’. I have made a simple weighing scales using a 5kg load cell and with this project I propose a prototype IoT stock tracing system for home or business. Please see 'Project Proposal' and 'Project layout' documents.
 
 NOTE: The python script file 'hx711.py' is taken (with thanks) from the following git hub source: https://github.com/tatobari/hx711py
 
