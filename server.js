@@ -1,20 +1,18 @@
-var http = require('http'); // Import Node.js core module
-const fs = require('fs').promises;
-var server = http.createServer(function (req, res) {   //create web server
-    if (req.url == '/') { //check the URL of the current request
-       
-        
-        // set response content    
-    fs.readFile(__dirname + "/index.html")
-        .then(contents => {
-            res.setHeader("Content-Type", "text/html");
-            res.writeHead(200);
-            res.end(contents);
-        })
+var express = require('express');
+var app = express();
 
+// set the port of our application
+// process.env.PORT lets the port be set by Heroku
+var port = process.env.PORT || 8080;
 
+app.set('view engine', 'ejs');
+
+// set the home page route
+app.get('/', function(req, res) {
+
+    res.render('index');
 });
 
-server.listen(5000); //6 - listen for any incoming requests
-
-console.log('Node.js web server at port 5000 is running..')
+app.listen(port, function() {
+    console.log('Our app is running on http://localhost:' + port);
+});
