@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.4/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.4/dist/semantic.min.js"></script>
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <section class="ui container">
+      <h1>stockHome Test App</h1>    
+        <section class="ui segment">
+          <div class="ui two column stackable center aligned grid">
+            <div class = "column">
+              <h2>
+                Potatoes
+              </h2>
+              <div class="ui horizontal segments">
+                <div class="ui segment">
+                  <p> <a id = "potatoesWeight"> </a> grams</p>
+                </div>
+                <div class="ui segment">
+                  <p><a id = "potatoTime"> </a></p>
+                </div>
+              </div>
+              <div class="ui huge segment">
+                  <h1><a id = "potatoPercent"> </a> %</h1>
+              </div>
+            </div>
+            <div class = "column">    
+              <iframe width="450" height="250" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1253706/charts/1?api_key=UFN1BILHOHIZJOBQ?dynamic=true"></iframe>
+            </div> 
+          </div>
+      </section>
+              <section class="ui segment">
+          <div class="ui two column stackable center aligned grid">
+            <div class = "column">
+              <h2>
+                Coffee
+              </h2>
+              <div class="ui horizontal segments">
+                <div class="ui segment">
+                  <p> <a id = "coffeeWeight"> </a> grams</p>
+                </div>
+                <div class="ui segment">
+                  <p><a id = "coffeeTime"> </a></p>
+                </div>
+              </div>
+              <div class="ui huge segment">
+                  <h1><a id = "coffeePercent"> </a> %</h1>
+              </div>
+            </div>
+            <div class = "column">    
+              <iframe width="450" height="250" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1253706/charts/2?api_key=UFN1BILHOHIZJOBQ?dynamic=true"></iframe>
+            </div> 
+          </div>
+      </section>
+                    <section class="ui segment">
+          <div class="ui two column stackable center aligned grid">
+            <div class = "column">
+              <h2>
+                Sugar
+              </h2>
+              <div class="ui horizontal segments">
+                <div class="ui segment">
+                  <p> <a id = "sugarWeight"> </a> grams</p>
+                </div>
+                <div class="ui segment">
+                  <p><a id = "sugarTime"> </a></p>
+                </div>
+              </div>
+              <div class="ui huge segment">
+                  <h1><a id = "sugarPercent"> </a> %</h1>
+              </div>
+            </div>
+            <div class = "column">    
+              <iframe width="450" height="250" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1253706/charts/3?api_key=UFN1BILHOHIZJOBQ?dynamic=true"></iframe>
+            </div> 
+          </div>
+      </section>
+    </section>
+  </body>
+</html>
