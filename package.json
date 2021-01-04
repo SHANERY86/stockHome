@@ -2,7 +2,7 @@
   "name": "stockhome",
   "version": "1.0.0",
   "description": "This project is called ‘stockHome’. I have made a simple weighing scales using a 5kg load cell.",
-  "main": "script.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
