@@ -1,0 +1,19 @@
+{
+  "name": "stockhome",
+  "version": "1.0.0",
+  "description": "This project is called ‘stockHome’. I have made a simple weighing scales using a 5kg load cell.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SHANERY86/stockHome.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SHANERY86/stockHome/issues"
+  },
+  "homepage": "https://github.com/SHANERY86/stockHome#readme"
+}
